@@ -31,7 +31,7 @@ export const Login: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
-      navigate('/auth/verify');
+      navigate('/app/dashboard');
     }
   };
 

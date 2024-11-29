@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/Button";
 import { motion, AnimatePresence, PanInfo } from "framer-motion";
 
@@ -114,9 +114,9 @@ export const Features: React.FC = () => {
         </Button>
 
         <div className="mt-4 text-center">
-          <span className="text-gray-400 text-sm">
+          <Link className="text-gray-400 text-sm" to="auth/login">
             Already have an account?{" "}
-          </span>
+          </Link>
           <button className="text-white text-sm font-medium">Log in</button>
         </div>
       </div>
